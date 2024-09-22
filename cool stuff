@@ -110,7 +110,7 @@ toggle.TextSize = 50.000
 
 -- Scripts:
 
-local function MEGMIHY_fake_script() -- addds.Script 
+local function YQGXSXO_fake_script() -- addds.Script 
 	local script = Instance.new('Script', addds)
 
 	function Click(mouse)
@@ -124,8 +124,8 @@ local function MEGMIHY_fake_script() -- addds.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(MEGMIHY_fake_script)()
-local function EDXXFM_fake_script() -- Frame.LocalScript 
+coroutine.wrap(YQGXSXO_fake_script)()
+local function RBJPOYD_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -172,8 +172,8 @@ local function EDXXFM_fake_script() -- Frame.LocalScript
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(EDXXFM_fake_script)()
-local function CCEJHJ_fake_script() -- loopaddds.Script 
+coroutine.wrap(RBJPOYD_fake_script)()
+local function NJEAH_fake_script() -- loopaddds.Script 
 	local script = Instance.new('Script', loopaddds)
 
 	function Click(mouse)
@@ -190,8 +190,8 @@ local function CCEJHJ_fake_script() -- loopaddds.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(CCEJHJ_fake_script)()
-local function XIPQBW_fake_script() -- stoploopadd.Script 
+coroutine.wrap(NJEAH_fake_script)()
+local function PVATRQ_fake_script() -- stoploopadd.Script 
 	local script = Instance.new('Script', stoploopadd)
 
 	function Click(mouse)
@@ -203,8 +203,8 @@ local function XIPQBW_fake_script() -- stoploopadd.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(XIPQBW_fake_script)()
-local function XFFW_fake_script() -- removedisaster.Script 
+coroutine.wrap(PVATRQ_fake_script)()
+local function WNLWJ_fake_script() -- removedisaster.Script 
 	local script = Instance.new('Script', removedisaster)
 
 	function Click(mouse)
@@ -216,14 +216,13 @@ local function XFFW_fake_script() -- removedisaster.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(XFFW_fake_script)()
-local function PVIK_fake_script() -- loopremove.Script 
+coroutine.wrap(WNLWJ_fake_script)()
+local function AAIXQIG_fake_script() -- loopremove.Script 
 	local script = Instance.new('Script', loopremove)
 
 	function Click(mouse)
 		_G.toggle = true
-		
-		while _G.togggle do
+		while _G.toggle do
 			wait()
 		game:GetService("ReplicatedStorage").RemoveDisaster:FireServer()
 		end
@@ -233,8 +232,8 @@ local function PVIK_fake_script() -- loopremove.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(PVIK_fake_script)()
-local function GRRHV_fake_script() -- toggle.LocalScript 
+coroutine.wrap(AAIXQIG_fake_script)()
+local function OJGUSPQ_fake_script() -- toggle.LocalScript 
 	local script = Instance.new('LocalScript', toggle)
 
 	local back = script.Parent.Parent.Frame
@@ -264,8 +263,8 @@ local function GRRHV_fake_script() -- toggle.LocalScript
 	
 	end)
 end
-coroutine.wrap(GRRHV_fake_script)()
-local function CHVU_fake_script() -- toggle.LocalScript 
+coroutine.wrap(OJGUSPQ_fake_script)()
+local function EAXPW_fake_script() -- toggle.LocalScript 
 	local script = Instance.new('LocalScript', toggle)
 
 	local dragger = {}; 
@@ -312,4 +311,4 @@ local function CHVU_fake_script() -- toggle.LocalScript
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(CHVU_fake_script)()
+coroutine.wrap(EAXPW_fake_script)()
