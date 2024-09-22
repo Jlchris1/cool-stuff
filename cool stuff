@@ -9,8 +9,8 @@ local addds = Instance.new("TextButton")
 local loopaddds = Instance.new("TextButton")
 local stoploopadd = Instance.new("TextButton")
 local removedisaster = Instance.new("TextButton")
-local loopremove = Instance.new("TextButton")
 local TextLabel = Instance.new("TextLabel")
+local loopremove = Instance.new("TextButton")
 local toggle = Instance.new("TextButton")
 
 --Properties:
@@ -73,18 +73,6 @@ removedisaster.Text = "remove dsaster"
 removedisaster.TextColor3 = Color3.fromRGB(0, 0, 0)
 removedisaster.TextSize = 23.000
 
-loopremove.Name = "loop remove"
-loopremove.Parent = Frame
-loopremove.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
-loopremove.BorderColor3 = Color3.fromRGB(0, 0, 0)
-loopremove.BorderSizePixel = 0
-loopremove.Position = UDim2.new(0, 0, 0.689999998, 0)
-loopremove.Size = UDim2.new(0, 171, 0, 31)
-loopremove.Font = Enum.Font.SourceSansBold
-loopremove.Text = "loop remove disaster"
-loopremove.TextColor3 = Color3.fromRGB(0, 0, 0)
-loopremove.TextSize = 20.000
-
 TextLabel.Parent = Frame
 TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
@@ -95,6 +83,18 @@ TextLabel.Font = Enum.Font.SourceSansBold
 TextLabel.Text = "admin"
 TextLabel.TextColor3 = Color3.fromRGB(255, 0, 0)
 TextLabel.TextSize = 50.000
+
+loopremove.Name = "loop remove"
+loopremove.Parent = Frame
+loopremove.BackgroundColor3 = Color3.fromRGB(170, 255, 255)
+loopremove.BorderColor3 = Color3.fromRGB(0, 0, 0)
+loopremove.BorderSizePixel = 0
+loopremove.Position = UDim2.new(0, 0, 0.768115938, 0)
+loopremove.Size = UDim2.new(0, 171, 0, 32)
+loopremove.Font = Enum.Font.SourceSansBold
+loopremove.Text = "loop remove disaster"
+loopremove.TextColor3 = Color3.fromRGB(0, 0, 0)
+loopremove.TextSize = 22.000
 
 toggle.Name = "toggle"
 toggle.Parent = ScreenGui
@@ -110,7 +110,7 @@ toggle.TextSize = 50.000
 
 -- Scripts:
 
-local function YQGXSXO_fake_script() -- addds.Script 
+local function FJAF_fake_script() -- addds.Script 
 	local script = Instance.new('Script', addds)
 
 	function Click(mouse)
@@ -124,8 +124,8 @@ local function YQGXSXO_fake_script() -- addds.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(YQGXSXO_fake_script)()
-local function RBJPOYD_fake_script() -- Frame.LocalScript 
+coroutine.wrap(FJAF_fake_script)()
+local function ULASHN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local dragger = {}; 
@@ -172,8 +172,8 @@ local function RBJPOYD_fake_script() -- Frame.LocalScript
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(RBJPOYD_fake_script)()
-local function NJEAH_fake_script() -- loopaddds.Script 
+coroutine.wrap(ULASHN_fake_script)()
+local function LEUWG_fake_script() -- loopaddds.Script 
 	local script = Instance.new('Script', loopaddds)
 
 	function Click(mouse)
@@ -190,8 +190,8 @@ local function NJEAH_fake_script() -- loopaddds.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(NJEAH_fake_script)()
-local function PVATRQ_fake_script() -- stoploopadd.Script 
+coroutine.wrap(LEUWG_fake_script)()
+local function MHNF_fake_script() -- stoploopadd.Script 
 	local script = Instance.new('Script', stoploopadd)
 
 	function Click(mouse)
@@ -203,8 +203,8 @@ local function PVATRQ_fake_script() -- stoploopadd.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(PVATRQ_fake_script)()
-local function WNLWJ_fake_script() -- removedisaster.Script 
+coroutine.wrap(MHNF_fake_script)()
+local function WOVHFQE_fake_script() -- removedisaster.Script 
 	local script = Instance.new('Script', removedisaster)
 
 	function Click(mouse)
@@ -216,15 +216,17 @@ local function WNLWJ_fake_script() -- removedisaster.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(WNLWJ_fake_script)()
-local function AAIXQIG_fake_script() -- loopremove.Script 
+coroutine.wrap(WOVHFQE_fake_script)()
+local function WGOPX_fake_script() -- loopremove.Script 
 	local script = Instance.new('Script', loopremove)
 
 	function Click(mouse)
+	
 		_G.toggle = true
+	
 		while _G.toggle do
 			wait()
-		game:GetService("ReplicatedStorage").RemoveDisaster:FireServer()
+			game:GetService("ReplicatedStorage").RemoveDisaster:FireServer()
 		end
 	
 	end
@@ -232,8 +234,8 @@ local function AAIXQIG_fake_script() -- loopremove.Script
 	
 	script.Parent.MouseButton1Down:connect(Click)
 end
-coroutine.wrap(AAIXQIG_fake_script)()
-local function OJGUSPQ_fake_script() -- toggle.LocalScript 
+coroutine.wrap(WGOPX_fake_script)()
+local function NWOA_fake_script() -- toggle.LocalScript 
 	local script = Instance.new('LocalScript', toggle)
 
 	local back = script.Parent.Parent.Frame
@@ -263,8 +265,8 @@ local function OJGUSPQ_fake_script() -- toggle.LocalScript
 	
 	end)
 end
-coroutine.wrap(OJGUSPQ_fake_script)()
-local function EAXPW_fake_script() -- toggle.LocalScript 
+coroutine.wrap(NWOA_fake_script)()
+local function GPZPN_fake_script() -- toggle.LocalScript 
 	local script = Instance.new('LocalScript', toggle)
 
 	local dragger = {}; 
@@ -311,4 +313,4 @@ local function EAXPW_fake_script() -- toggle.LocalScript
 	script.Parent.Active = true
 	script.Parent.Draggable = true
 end
-coroutine.wrap(EAXPW_fake_script)()
+coroutine.wrap(GPZPN_fake_script)()
